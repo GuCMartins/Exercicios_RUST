@@ -8,8 +8,8 @@
 // I AM NOT DONE
 
 fn main() {
-    let cat = ("Furry McFurson", 3.5);
-    let /* your pattern here */ = cat;
+    let cat = ("Furry McFurson", 3.5,"Black");
+    let (name, age, fur) = cat;//recebe os valores da tupla em ordem
 
-    println!("{} is {} years old.", name, age);
+    println!("{} is {} years old, with {} fur", name, age,fur);
 }
