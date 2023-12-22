@@ -5,8 +5,14 @@
 
 // I AM NOT DONE
 
+use std::io;
+
 fn main() {
-    let x;
+    println!("Digite um numero");
+    let mut x = String::new();
+    io::stdin().read_line(&mut x).expect("Erro ao ler o numero");
+    let x:i64 = x.trim().parse().expect("Digite um numero valido");
+
     if x == 10 {
         println!("x is ten!");
     } else {

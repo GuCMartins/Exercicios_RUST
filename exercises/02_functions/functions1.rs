@@ -5,6 +5,10 @@
 
 // I AM NOT DONE
 
+fn call_me() {
+    println!("Me liga no zap");
+}
+
 fn main() {
     call_me();
 }

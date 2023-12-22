@@ -5,7 +5,12 @@
 
 // I AM NOT DONE
 
+use std::io;
+
 fn main() {
-    let x: i32;
-    println!("Number {}", x);
+    println!("Digite um numero");
+    let mut x = String::new();
+    io::stdin().read_line(&mut x).expect("Erro ao ler o numero");
+    let x:i32 = x.trim().parse().expect("Digite um numero valido");
+    println!("Mambo Number {}", x);
 }

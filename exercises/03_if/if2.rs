@@ -11,8 +11,12 @@ pub fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
     } else {
-        1
+        "1"
     }
+}
+
+fn main() {
+    println!("{}", foo_if_fizz("fizz"));
 }
 
 // No test changes needed!

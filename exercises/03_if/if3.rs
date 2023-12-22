@@ -8,11 +8,11 @@ pub fn animal_habitat(animal: &str) -> &'static str {
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
-        2.0
+        2
     } else if animal == "snake" {
         3
     } else {
-        "Unknown"
+        0
     };
 
     // DO NOT CHANGE THIS STATEMENT BELOW
@@ -27,6 +27,13 @@ pub fn animal_habitat(animal: &str) -> &'static str {
     };
 
     habitat
+}
+
+fn main() {
+    println!("A crab lives in {}", animal_habitat("crab"));
+    println!("A snake lives in {}", animal_habitat("snake"));
+    println!("A gopher lives in {}", animal_habitat("gopher"));
+    println!("A dinosaur lives in {}", animal_habitat("dinosaur"));
 }
 
 // No test changes needed.
