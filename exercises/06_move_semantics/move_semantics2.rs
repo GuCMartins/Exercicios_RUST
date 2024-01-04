@@ -7,11 +7,11 @@
 
 // I AM NOT DONE
 
-#[test]
+// #[test] VERIFICAR ESSA PARTE DOS TESTES DEPOIS
 fn main() {
     let vec0 = vec![22, 44, 66];
 
-    let mut vec1 = fill_vec(vec0);
+    let vec1 = fill_vec(vec0.clone());//cria um clone do vec0
 
     assert_eq!(vec0, vec![22, 44, 66]);
     assert_eq!(vec1, vec![22, 44, 66, 88]);

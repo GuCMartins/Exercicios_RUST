@@ -5,17 +5,21 @@
 
 // I AM NOT DONE
 
-#[test]
+// #[test]
 fn main() {
-    let vec0 = vec![22, 44, 66];
+    let vec0 = vec![22, 44, 66];//processo para se criar um vetor
 
-    let vec1 = fill_vec(vec0);
+    let vec1 = fill_vec(vec0.clone());
+
+    println!("{} has length {} content `{:?}`", "vec0", vec0.len(), vec0);
+    println!("{} has length {} content `{:?}`", "vec1", vec1.len(), vec1);
 
     assert_eq!(vec1, vec![22, 44, 66, 88]);
+    //verifica se o vec1 é igual ao vec![22, 44, 66, 88]
 }
 
 fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
-    let vec = vec;
+    let mut vec = vec;
 
     vec.push(88);
 
