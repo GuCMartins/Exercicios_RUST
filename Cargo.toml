@@ -22,7 +22,7 @@ clap = { version = "4.4.0", features = ["derive"] }
 
 [[bin]]
 name = "rustlings"
-path = "src/main.rs"
+path = "exercises/07_structs/structs3.rs"
 
 [dev-dependencies]
 assert_cmd = "2.0.12"

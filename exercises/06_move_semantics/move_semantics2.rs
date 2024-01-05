@@ -7,7 +7,7 @@
 
 // I AM NOT DONE
 
-// #[test] VERIFICAR ESSA PARTE DOS TESTES DEPOIS
+//#[test] //VERIFICAR ESSA PARTE DOS TESTES DEPOIS
 fn main() {
     let vec0 = vec![22, 44, 66];
 
