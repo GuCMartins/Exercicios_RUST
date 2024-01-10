@@ -19,14 +19,12 @@
 // Execute `rustlings hint errors2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
 use std::num::ParseIntError;
 
 pub fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
-    let processing_fee = 1;
-    let cost_per_item = 5;
-    let qty = item_quantity.parse::<i32>();
+    let qty = item_quantity.parse::<i32>()?; //the ? operator is used after parse::<i32>(). This operator will 
+    let processing_fee = 1;                  //automatically return the ParseIntError from the function if parse::<i32>() fails. 
+    let cost_per_item = 5;                   //If parse::<i32>() succeeds, it will unwrap the result so that qty is an i32, not a Result<i32, ParseIntError>.
 
     Ok(qty * cost_per_item + processing_fee)
 }

@@ -22,7 +22,7 @@ clap = { version = "4.4.0", features = ["derive"] }
 
 [[bin]]
 name = "rustlings"
-path = "exercises/13_error_handling/errors1.rs"
+path = "exercises/13_error_handling/errors6.rs"
 
 [dev-dependencies]
 assert_cmd = "2.0.12"
